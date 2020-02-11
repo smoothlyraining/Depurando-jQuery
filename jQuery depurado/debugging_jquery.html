@@ -24,8 +24,13 @@
 			});
 
 			$('button').click(function(){
-				var result = $('input:checked').val()  
+				var result = $('input:checked').val() 
+				if(result==undefined){
+					alert('You must select an option!')
+				}
+				else{ 
 				alert("Thank you for your input, we like " + result + " too!");
+				}
 			});	
 		})	
 	</script>
